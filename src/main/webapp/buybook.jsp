@@ -188,7 +188,7 @@
     <div class="navbar">
         <div class="nav-title">Book<span style="color: Tomato;">Buddy</span></div>
         <div class="nav-href">
-            <a href="#" class="nav-link">Home</a>
+            <a href="home.jsp" class="nav-link">Home</a>
             <a href="#" class="nav-link">Category</a>
             <a href="#" class="nav-link">Latest</a>
             <a href="about.jsp" class="nav-link">About Us</a>
@@ -210,7 +210,6 @@
                     </div>
                     <div class="button-group">
                         <a href="./Books_buy.html" class="start-button">Buy</a>
-                        <a href="./Borrow_count.html" class="tour-button">Borrow</a>
                     </div>
                 </form>
             </div>
