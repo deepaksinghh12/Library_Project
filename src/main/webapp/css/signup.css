@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px; /* Reduced padding */
+    box-sizing: border-box;
+    height: 75px;
+}
+
+.logo {
+    color: Tomato;
+    margin: 0 10px; /* Adjusted margins */
+    cursor: pointer;
+}
+
+.navbar-vertical .btn {
+    text-decoration: none;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 5px 10px; /* Reduced padding */
+    background-color: red;
+    border-radius: 30px;
+    font-size: 16px; /* Reduced font size */
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.navbar-vertical .btn:hover {
+    transform: scale(0.9);
+}
+
+.navbar-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    flex: 1;
+}
+
+.ullist {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ullist li {
+    margin-right: 10px; /* Adjusted margin */
+}
+
+.ullist li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* Reduced font size */
+}
+
+.ullist li a:hover {
+    color: black;
+}
+
+/* Container styling */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #e7e7e7;
+    padding: 20px;
+    box-shadow: 15px 19px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered heading */
+h2 {
+    text-align: center;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Form label styling */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form input styling */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #555;
+}
+
+/* Link to switch between login and signup */
+.switch-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 75px;
+    background-color: #000000;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerdiv {
+    width: 50%;
+    text-align: center;
+}
+
+.footerdiv h5 {
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.footerdiv hr {
+    width: 100%;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ullist {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ullist li {
+        margin: 10px 0;
+    }
+
+    .navbar-vertical .btn {
+        margin-top: 10px;
+    }
+}
+
+/* Remove underline from links */
+.no-underline {
+    text-decoration: none;
+    color: inherit; /* Ensures text color remains unchanged */
+}
