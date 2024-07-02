@@ -12,12 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 public class Signup extends HttpServlet {
 
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
-	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         String name = req.getParameter("name");
         String email = req.getParameter("username/email");
         String pass = req.getParameter("password");
@@ -26,7 +21,6 @@ public class Signup extends HttpServlet {
         PrintWriter pw = res.getWriter();
 
         String url = "jdbc:mysql://localhost:3306/library";
-        
         String username = "root";
         String password = "123456";
 
@@ -34,7 +28,7 @@ public class Signup extends HttpServlet {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             try (Connection connection = DriverManager.getConnection(url, username, password);
-                 PreparedStatement pStatement = connection.prepareStatement("INSERT INTO signup_table (name, username/email, password) VALUES (?, ?, ?)")) {
+                 PreparedStatement pStatement = connection.prepareStatement("INSERT INTO signup_table (name, email, password) VALUES (?, ?, ?)")) {
                 
                 pStatement.setString(1, name);
                 pStatement.setString(2, email);
@@ -43,8 +37,8 @@ public class Signup extends HttpServlet {
                 int resultSet = pStatement.executeUpdate();
                 
                 if (resultSet > 0) {
-                    if ("Himek".equals(name) && "Himek@123".equals(email) && "123".equals(pass)) {
-                        res.sendRedirect("Books.jsp");
+                    if ("Admin".equals(name) && "Admin@123".equals(email) && "123".equals(pass)) {
+                        res.sendRedirect("books.jsp");
                     } else {
                         res.sendRedirect("login.jsp");
                     }

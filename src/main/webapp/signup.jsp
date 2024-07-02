@@ -38,13 +38,14 @@
             <!-- Email input -->
             <div class="form-group">
                 <label for="signup-email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="username/email" required>
             </div>
             <!-- Password input -->
             <div class="form-group">
                 <label for="signup-password">Password:</label>
                 <input type="password" id="password" name="password" required>
             </div>
+            	
             <!-- Signup button -->
             <button class="btn" type="submit">Sign Up</button>
         </form>
