@@ -444,7 +444,6 @@ footer {
                         <li><a href="buybook.jsp">Buy Books</a></li>
                         <li><a href="about.jsp">About Us</a></li>
                     </ul>
-
                 </nav>
                 
                 <button class="btn" onclick="redirectToPage()">Sign In</button>   
@@ -456,9 +455,9 @@ footer {
         </div>
         <div class="menu-img" onclick="toggle()" id="mi"><img src="images/menu.png"></div>
         <div class="mainrow">
-
             <div class="main-content">
                 <h2>“A mind needs books as a sword needs a <br> whetstone, if it is to keep its edge.”</h2>
+
                 <button class="searchInput">Live and learn and pass it on.</button>
 
                 <p>Popular Books: <a href="#">Programming</a> , <a href="#">Motivational</a> , <a href="#">Designing</a>
